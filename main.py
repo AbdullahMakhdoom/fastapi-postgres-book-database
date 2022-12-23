@@ -32,6 +32,11 @@ def add_author(author: SchemaAuthor):
     db.session.commit()
     return db_author
 
+@app.get("/books/")
+def get_books():
+    books = db.session.query(Book).all()
 
+    return books
+    
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
