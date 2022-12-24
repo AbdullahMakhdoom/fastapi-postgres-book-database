@@ -19,6 +19,8 @@ After running the services, migration needs to be done from SQLAlchemy to Postgr
 
 Run the following commands,
 
+`alembic init alembic`
+
 `docker-compose run app alembic revision --autogenerate -m "New revision"`
 
 `docker-compose run app alembic upgrade head`
