@@ -11,6 +11,8 @@ In this project, a book database is created using python.
 
 Note : postgresql docker is not persistently storing data in volumes.
 
+Before running the services, type a password in `.env` file.
+
 To run the services, use `docker-compose up`
 
 After running the services, migration needs to be done from SQLAlchemy to PostgreSQL.
